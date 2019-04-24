@@ -12,5 +12,7 @@ class SolutionTest {
 
         result = solution.convert("PAYPALISHIRING", 4)
         Assert.assertEquals("PINALSIGYAHRPI", result)
+
+        result = solution.convert("A", 1)
     }
 }
