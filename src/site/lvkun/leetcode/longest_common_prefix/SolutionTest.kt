@@ -9,5 +9,6 @@ class SolutionTest {
         val solution = Solution()
         Assert.assertEquals("fl", solution.longestCommonPrefix(arrayOf("flower","flow","flight")))
         Assert.assertEquals("", solution.longestCommonPrefix(arrayOf("dog","racecar","car")))
+        Assert.assertEquals("a", solution.longestCommonPrefix(arrayOf("aa","a")))
     }
 }
