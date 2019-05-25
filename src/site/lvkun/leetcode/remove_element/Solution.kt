@@ -20,6 +20,6 @@ class Solution {
             }
         }
 
-        return start + 1
+        return start
     }
 }
