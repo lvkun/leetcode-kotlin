@@ -1,7 +1,7 @@
 package site.lvkun.leetcode.implement_strstr
 
 class Solution {
-    fun nextOf(needle: String): IntArray {
+    private fun nextOf(needle: String): IntArray {
         val next = IntArray(needle.length)
 
         var n = 0
