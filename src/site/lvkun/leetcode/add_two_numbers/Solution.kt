@@ -13,8 +13,8 @@ class Solution {
         var node2 = l2
 
         while (node1 != null || node2 != null || carry != 0) {
-            val v1 = node1?.value ?: 0
-            val v2 = node2?.value ?: 0
+            val v1 = node1?.`val` ?: 0
+            val v2 = node2?.`val` ?: 0
 
             val sum = v1 + v2 + carry
             val v = sum % 10

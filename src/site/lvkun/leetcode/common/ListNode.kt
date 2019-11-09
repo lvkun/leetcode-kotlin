@@ -1,6 +1,6 @@
 package site.lvkun.leetcode.common
 
-class ListNode(var value: Int) {
+class ListNode(var `val`: Int) {
     var next: ListNode? = null
 
     companion object {
@@ -18,10 +18,10 @@ class ListNode(var value: Int) {
 
     override fun toString(): String {
         if (next != null) {
-            return value.toString() + "->" + next.toString()
+            return `val`.toString() + "->" + next.toString()
         }
 
-        return value.toString()
+        return `val`.toString()
     }
 
     override fun equals(other: Any?): Boolean {
@@ -30,14 +30,14 @@ class ListNode(var value: Int) {
 
         other as ListNode
 
-        if (value != other.value) return false
+        if (`val` != other.`val`) return false
         if (next != other.next) return false
 
         return true
     }
 
     override fun hashCode(): Int {
-        var result = value
+        var result = `val`
         result = 31 * result + (next?.hashCode() ?: 0)
         return result
     }

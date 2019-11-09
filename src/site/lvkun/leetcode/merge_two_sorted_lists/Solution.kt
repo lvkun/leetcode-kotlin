@@ -9,7 +9,7 @@ class Solution {
         var n1 = l1
         var n2 = l2
         while (n1 != null && n2 != null) {
-            if (n1.value <= n2.value) {
+            if (n1.`val` <= n2.`val`) {
                 cur.next = n1
                 cur = n1
                 n1 = n1.next

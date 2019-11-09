@@ -6,7 +6,7 @@ class Solution {
     fun deleteDuplicates(head: ListNode?): ListNode? {
         var cur = head
         while (cur != null) {
-            if (cur.next?.value == cur.value) {
+            if (cur.next?.`val` == cur.`val`) {
                 cur.next = cur.next?.next
             } else {
                 cur = cur.next

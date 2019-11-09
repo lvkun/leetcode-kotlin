@@ -11,7 +11,7 @@ class Solution {
         var next = cur?.next
         while (next != null) {
 
-            if (next.value == `val`) {
+            if (next.`val` == `val`) {
                 cur?.next = next.next
                 next = cur?.next
             } else {

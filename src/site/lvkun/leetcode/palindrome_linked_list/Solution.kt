@@ -56,7 +56,7 @@ class Solution {
         }
 
         while (h1 != null) {
-            if (h1.value != h2?.value) {
+            if (h1.`val` != h2?.`val`) {
                 return false
             }
             h1 = h1.next
