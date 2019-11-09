@@ -47,6 +47,18 @@ class TreeNode(var `val`: Int) {
         return "[" + result.joinToString(",") + "]"
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (other == null) {
+            return false
+        }
+
+        if (other !is TreeNode) {
+            return false
+        }
+
+        return this.`val` == other.`val` && this.left == other.left && this.right == other.right
+    }
+
     companion object {
         private val NULL = TreeNode(-1)
     }
