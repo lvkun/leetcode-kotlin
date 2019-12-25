@@ -7,7 +7,7 @@ import site.lvkun.leetcode.common.Utils
 class SolutionTest {
     @Test
     fun testMaximalRectangle() {
-        val matrix = Utils.matrixFromString("[\n" +
+        val matrix = Utils.charMatrixFromString("[\n" +
                 "  [\"1\",\"0\",\"1\",\"0\",\"0\"],\n" +
                 "  [\"1\",\"0\",\"1\",\"1\",\"1\"],\n" +
                 "  [\"1\",\"1\",\"1\",\"1\",\"1\"],\n" +
