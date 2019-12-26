@@ -12,7 +12,7 @@ object Utils {
             if (line.trim().isNotEmpty()) {
                 val lineResult = mutableListOf<Char>()
                 for (s in line.split(",")) {
-                    val c = s.trim()
+                    val c = s.trim().replace("'", "")
                     if (c.isNotEmpty()) {
                         lineResult.add(c[0])
                     }
