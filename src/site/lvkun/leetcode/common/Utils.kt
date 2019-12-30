@@ -1,7 +1,7 @@
 package site.lvkun.leetcode.common
 
 object Utils {
-    fun charMatrixFromString(str: String): Array<CharArray> {
+    fun charMatrixFromString(str: String, delimiter: String = ","): Array<CharArray> {
         val lines = str.replace("[", "")
                 .replace("]", "")
                 .replace("\"", "")
@@ -11,7 +11,7 @@ object Utils {
         for (line in lines) {
             if (line.trim().isNotEmpty()) {
                 val lineResult = mutableListOf<Char>()
-                for (s in line.split(",")) {
+                for (s in line.split(delimiter)) {
                     val c = s.trim().replace("'", "")
                     if (c.isNotEmpty()) {
                         lineResult.add(c[0])
